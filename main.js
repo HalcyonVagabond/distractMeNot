@@ -22,8 +22,8 @@ function removeComments(){
 
 function refreshPage() {
     if(window.location.href === 'https://www.youtube.com/'){
+        location.reload
         setTimeout(() => {
-            location.reload
             removeHomepage()
         }, 500)
     }
