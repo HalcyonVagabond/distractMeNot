@@ -8,11 +8,9 @@ function removeHomepage(){
 }
 function removeSuggestions() {
     //Removes Youtube Suggested videos, clicks on Theater Mode button
-    setTimeout(() => {
-        document.getElementById('related').style.display = 'none'
-        document.getElementById('secondary').style.display = 'none'
-        document.querySelector('.ytp-size-button, .ytp-button').click();
-    }, 2000);
+    document.getElementById('related').style.display = 'none'
+    document.getElementById('secondary').style.display = 'none'
+    document.querySelector('.ytp-size-button, .ytp-button').click(); 
 }
 function removeComments(){
     // Removes the comment section
@@ -22,23 +20,14 @@ function removeComments(){
 
 function refreshPage() {
     if(window.location.href === 'https://www.youtube.com/'){
-        location.reload
-        setTimeout(() => {
-            removeHomepage()
-        }, 500)
+        removeHomepage()
     }
     if(window.location.href.includes('watch')){
-        setTimeout(() => {
-            location.reload
-            removeSuggestions()
-        }, 500)
+        removeSuggestions()
     }
     if(window.location.href.includes('watch')){
-        setTimeout(() => {
-            location.reload
-            removeComments()
-        }, 500)
+        removeComments()
     }
 }
-
+location.reload
 refreshPage()
