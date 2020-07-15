@@ -3,8 +3,11 @@ document.body.style.border = '10px solid blue';
 document.body.style.zIndex = '30002'
 document.getElementById('secondary').style.display = 'none'
 
+
+
 function removeSuggestions() {
     setTimeout(() => {
+        document.getElementById('sections').style.display='none'
         document.getElementById('secondary').style.display = 'none'
         document.querySelector('.ytp-size-button, .ytp-button').click();
     }, 2000);
