@@ -29,5 +29,5 @@ function refreshPage() {
         removeComments()
     }
 }
-location.reload
+
 refreshPage()
