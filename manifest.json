@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "ClearTube",
+    "name": "DistractMeNot",
     "version": "1.0",
   
-    "description": "Description here.",
+    "description": "A browser plugin that helps you focus by removing distracting sections of websites. Enjoy!",
   
     "icons": {
       "48": "icons/clear.jpeg"
@@ -15,6 +15,5 @@
         "js": ["main.js"]
       }
     ]
-  
-  }
+}
   
