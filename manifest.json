@@ -18,6 +18,20 @@
         "matches": ["<all_urls>"],
         "js": ["main.js"]
       }
-    ]
-}
+    ],
+    "background": {
+      "scripts": ["popup.js"]
+    },
+
+    "permissions": [
+      "webNavigation"
+    ],
+
+    "browser_action": {
+      "default_icon": "icons/clear.jpeg",
+      "default_title": "Distract Me Not",
+      "default_popup": "view.html"
+    }
+  
+  }
   
