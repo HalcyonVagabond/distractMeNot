@@ -1,4 +1,3 @@
-console.log("stuff is good");
-console.log("stuff is good");
-console.log("popup.js");
-console.log("stuff is good");
+
+document.getElementById("home").classList.toggle("green")
+document.getElementById("home").classList.toggle

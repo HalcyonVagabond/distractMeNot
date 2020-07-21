@@ -15,6 +15,9 @@
         "js": ["main.js"]
       }
     ],
+    "background": {
+      "scripts": ["popup.js"]
+    },
 
     "permissions": [
       "webNavigation"
