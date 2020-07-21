@@ -9,6 +9,10 @@
       "48": "icons/clear.jpeg"
     },
   
+    "background": {
+      "scripts": ["background.js"]
+    },
+
     "content_scripts": [
       {
         "matches": ["<all_urls>"],

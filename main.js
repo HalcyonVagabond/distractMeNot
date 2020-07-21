@@ -18,7 +18,7 @@ function removeComments(){
     document.getElementById('sections').style.display = 'none'
 }
 
-function refreshPage() {
+function ytPageConditionals() {
     if(window.location.href === 'https://www.youtube.com/'){
         removeHomepage()
     }
@@ -29,5 +29,4 @@ function refreshPage() {
         removeComments()
     }
 }
-location.reload
-refreshPage()
+ytPageConditionals();
